@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title> 
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1_adt.jpg" class="logo"alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        <div class="header-text">
+              <p>Web Developer</p>
+              <h1>Hi, I'm <span> Aditi Mishra</span><br> From India</h1>
+        </div>
+        </div>
+    </div>
+    <!------------------about--------------------------->
+    <div id="about">
+        <div class="container">
+           <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpg" alt="">
+                </div>  
+                <div class="about-col-2">
+                 <h1 class="sub-title">About Me</h1>
+                  <p>Hello I'm Aditi Mishra from Khandwa Madhya Pradesh. I am currently persuing Btech from
+                   Maulana Azad National Institute Of Technology Bhopal. Struggling hard and working to make 
+                   things in my life. Learning from past mistakes and experiences. Hope to see myself at heights in the life.
+                 </p>
+                   
+                  <!-------<div class="tab-titles">
+                       <p class="tab-links active-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">experience</p>---->
+                        <h1 class="tab">Education</h1>
+                    
+                   <!-------<div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing web interfaces</li>
+                            <li><span>DSA Problem Solving</span><br>Data Structure And Algorithms</li>
+                            <li><span>Communication Skills</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"id="experience">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing web interfaces</li>
+                            <li><span>DSA Problem Solving</span><br>Data Structure And Algorithms</li>
+                            <li><span>Communication Skills</span></li>
+                        </ul>
+                    </div>--->
+                    <div class="tab-contents"id="Education">
+                        <ul>
+                            <li><span>BTech-CSE(2021-Current)</span><br>Maulana Azad National Institute Of Technology Bhopal</li>
+                            <li><span>Higher Secondary(2019-20)</span><br>St. Joseph's Convent School Khandwa</li>
+                            <li><span>High School(2017-18)</span><br>St. Joseph's Convent School Khandwa</li>
+                        </ul>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+ <!------------------skills--------------------------->    
+ <div id="skills">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skill-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>Designing web interfaces using Frontend that is HTML, CSS and JavaScript.</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-check"></i>
+            <h2>Data Structure And Algorithms</h2>
+            <p>DSA Problem Solving</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>My SQL</h2>
+            <p>Structured Query Language</p>
+          </div>
+        </div>
+    </div>
+</div>
+<!------------------Hobbies--------------------------->   
+<div id="hobbies">
+    <div class="container">
+        <h1 class="sub-title">My Hobbies</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/writing.jpeg" alt="">
+                <div class="layer">
+                <h3>Writing Hindi Poetries</h3>
+                <p>I love to write hindi poetries. It's just like a hobby more than a skill.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/reading.jpeg" alt="">
+                <div class="layer">
+                    <h3>Reading Poetries and Novels</h3>
+                    <p>I like to read hindi poetries and novels. These books give a me a lot of peace and energise me to do my work.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/travelling.jpeg" alt="">
+                <div class="layer">
+                    <h3>Travelling</h3>
+                    <p>I love to travel to many places and explore them, the nature and beauty.It's quite adventurous.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!------------------contact--------------------------> 
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>aditimishra1102@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>8319642472</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/aditi-mishra-b48882223"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required> 
+                <input type="email" name="email" placeholder="Your Email" required> 
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Aditi</p>
+    </div>
+</div>
+<script>
+    var sidemenu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+         }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+         }
+</script>
+<script src="index.js"></script>
+
+
+<!-----
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-tab");
+        }
+        Event.currentTarget.classlist.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>---->
+<script>
+    const scriptURL = ' https://script.google.com/macros/s/AKfycbxjkLug2p3N5MFsr0JzBz58ct8fwdr3DIwBxZTj48le5DGlpqzsXYE4Kqjcbr_rk7GA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=" "
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
