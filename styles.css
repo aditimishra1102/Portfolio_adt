@@ -95,26 +95,6 @@ nav ul li a:hover::after{
     display: flex;
     margin: 20px 0 40px;
 }
-/*.tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
-.tab-links-after{
-    content: ' ';
-    width: 0;
-    height: 3px;
-    background: #ff004f;
-    position: absolute;
-    left: 0px;
-    bottom: -6px;
-    transition: 0.5s;
-}
-.tab-links.active-links::after{
-    width: 50%;
-}*/
 .tab{
     margin-top: 10%;
 }
@@ -160,6 +140,19 @@ margin-bottom: 15px;
  .skill-list div:hover{
     background: #ff004f;
     transform: translateY(-10px);
+ }
+.profile-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    grid-gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 140px;
+ }
+
+ .profile-list img{
+    width: 160px;
+    height:80px;
  }
  /*-----------------hobbies---------------------------*/
  #hobbies{
@@ -255,7 +248,18 @@ margin-bottom: 15px;
   }
 .btn.btn2{
     display: inline-block;
-   background: #ff004f;
+   background: #080808;
+   margin: 50px auto;
+   width:fit-content ;
+   border: 1px solid #ff004f;
+   padding: 14px 50px;
+   border-radius: 6px;
+   text-decoration: none;
+   color: #fff;
+   transition: background 0.5s;
+}
+.btn.btn2:hover{
+    background: #ff004f;
 }
 .contact-right form{
     width: 100%;
